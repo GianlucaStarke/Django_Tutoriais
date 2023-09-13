@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <a class="botao-voltar" href="{% url 'post_detail' post.pk %}">&leftarrow;</a>
+    
+    <form action="" method="POST">{% csrf_token %}
+        <p>Are you sure you want to delete this post?</p>
+        <input type="submit" value="Confirm">
+    </form>
+{% endblock content %}
