@@ -44,3 +44,9 @@ header h1 a {
 .post-entry h2 a:hover {
     color: red;
 }
+
+.botao-voltar {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
