@@ -1,4 +1,4 @@
-{% extends 'product/base.html' %}
+{% extends 'products/base.html' %}
 
 {% block content %}
     <h1 class="my-4">
@@ -29,9 +29,9 @@
                     <tbody>
                         {% for product in object_list %}
                             <tr>
-                                <td>{{ product }}</td>
-                                <td>{{ product }}</td>
-                                <td>{{ product }}</td>
+                                <td>{{ product.name }}</td>
+                                <td>{{ product.description }}</td>
+                                <td>{{ product.price }}</td>
                                 <td>
                                     <a href="{% url 'product_view' product.id %}">
                                         <button type="button" class="btn btn-outline-primary btn-sm">
